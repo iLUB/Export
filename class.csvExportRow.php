@@ -22,7 +22,7 @@
 */
 require_once('class.csvExportValue.php');
 require_once('class.csvExportColumns.php');
-require_once(dirname(__FILE__) . '/../Exceptions/class.csvExportException.php');
+require_once(dirname(__FILE__) . '/Exceptions/class.csvExportException.php');
 
 /**
  * Class csvExportRow
