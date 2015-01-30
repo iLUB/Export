@@ -82,7 +82,15 @@ class csvExportColumns {
      * @return bool
      */
     public function columnExists(csvExportColumn $column){
-        return array_key_exists($column->getColumnId(),$this->getColumns());
+        return $this->columnIdExists($column->getColumnId());
+    }
+
+    /**
+     * @param string $column_id
+     * @return bool
+     */
+    public function columnIdExists($column_id = ""){
+        return array_key_exists($column_id,$this->getColumns());
     }
 
     public function reset(){
